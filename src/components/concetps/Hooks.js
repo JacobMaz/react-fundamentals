@@ -24,6 +24,20 @@ const Hooks = () => {
     )
 }
 
+const Hooks2 = () => {
+    const [results, queryNum, setQueryNum] = useNumHook("");
+
+    return(
+        <div className="main">
+            <div className="mainDiv">
+                <h3>Enter a number below to see a number fact</h3>
+                <input value={queryNum} onChange={e => setQueryNum(e.target.value)} placeholder="enter a number" />
+                {results ? <h2>{results}</h2> : <div></div>}
+            </div>
+        </div>
+    )
+}
+
 const useNumHook = (num) => {
     const [queryNum, setQueryNum] = useState(num);
     const [results, setResults] = useState("");
@@ -42,4 +56,4 @@ const useNumHook = (num) => {
     return [results, queryNum, setQueryNum];
 }
 
-export default Hooks;
+export default Hooks2;
