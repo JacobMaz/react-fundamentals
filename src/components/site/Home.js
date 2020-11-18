@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className="main">
             <div className="mainDiv">
-                <h1>WElcome to React Fundamentals</h1>
+                <h1>Welcome to React Fundamentals</h1>
                 <p>This app is... lakjsdflkasjddjfkas laskjdf alkjasdlf asldkjfasdkljf aslkjadsf laksjdf aslsdkjfasldkjf asdlkfjasdlfjas dlkasdjf  lkasjd sadljdfs</p>
                 <hr />
                 <h1>Important Notes</h1>
